@@ -29,11 +29,11 @@ public class JedisPoolUtil {
         // JedisCluster 连接配置
         String[] serverArray = prop.getProperty("servers").split(",");
         // 连接 RedisCluster 实例超时时间
-        Integer connectionTimeout = Integer.valueOf(prop.getProperty("connectionTimeout"));
+        int connectionTimeout = Integer.parseInt(prop.getProperty("connectionTimeout"));
         // 读写 RedisCluster 实例超时时间
-        Integer soTimeout = Integer.valueOf(prop.getProperty("soTimeout"));
+        int soTimeout = Integer.parseInt(prop.getProperty("soTimeout"));
         // 连接 RedisCluster 实例失败重试次数
-        Integer maxAttempts = Integer.valueOf(prop.getProperty("maxAttempts"));
+        int maxAttempts = Integer.parseInt(prop.getProperty("maxAttempts"));
 
         // Jedis 连接池配置
         // 建立连接池配置参数

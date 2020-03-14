@@ -117,15 +117,4 @@ public class LocalDateTimeUtil {
         LocalDateTime lateDate = LocalDateTimeFormatUtil.parseToLocalDateTime(late, dateTimeFormatter);
         return millisSecondsBetween(earlyDate, lateDate);
     }
-
-    /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
-     */
-    public static void main(String[] args) {
-        LocalDateTime early = LocalDateTime.of(2017, 9, 1, 0, 0, 0);
-        LocalDateTime late = LocalDateTime.of(2017, 10, 2, 0, 0, 0);
-        System.out.println(millisSecondsBetween(early, late));
-    }
 }
