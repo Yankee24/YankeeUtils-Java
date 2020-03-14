@@ -44,6 +44,7 @@ public class LocalDateTimeFormatUtil {
     // 时间格式为 HH时mm分ss秒
     private static DateTimeFormatter hmsFormat3;
 
+    // 静态资源
     static {
         ymdhmsFormat1 = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         ymdhmsFormat2 = DateTimeFormatter.ofPattern("yyyyyMMdd HH:mm:ss");

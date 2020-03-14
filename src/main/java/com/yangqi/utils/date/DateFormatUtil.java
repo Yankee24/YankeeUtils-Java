@@ -45,7 +45,7 @@ public class DateFormatUtil {
     /**
      * String parse to your format date.
      *
-     * @param date             the date
+     * @param date             the date of string
      * @param simpleDateFormat the simple date format
      * @return the date
      */
@@ -77,7 +77,7 @@ public class DateFormatUtil {
     /**
      * String parse to yyyyMM date.
      *
-     * @param date the date
+     * @param date the date of string
      * @return the date
      */
     public static Date parseToDate1(String date) {
@@ -108,7 +108,7 @@ public class DateFormatUtil {
     /**
      * String parse to yyyy-MM date.
      *
-     * @param date the date
+     * @param date the date of string
      * @return the date
      */
     public static Date parseToDate2(String date) {
@@ -139,7 +139,7 @@ public class DateFormatUtil {
     /**
      * String parse to yyyy年MM月 date.
      *
-     * @param date the date
+     * @param date the date of string
      * @return the date
      */
     public static Date parseToDate3(String date) {

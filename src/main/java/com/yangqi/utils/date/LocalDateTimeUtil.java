@@ -32,6 +32,7 @@ public class LocalDateTimeUtil {
      * @return the days
      */
     public static long daysBetween(String early, String late, DateTimeFormatter dateTimeFormatter) {
+        // 转换日期格式
         LocalDate earlyDate = LocalDateTimeFormatUtil.parseToLocalDate(early, dateTimeFormatter);
         LocalDate lateDate = LocalDateTimeFormatUtil.parseToLocalDate(late, dateTimeFormatter);
         // 断言测试
