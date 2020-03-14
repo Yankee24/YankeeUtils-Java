@@ -21,4 +21,16 @@ public class NullUtil {
     public static boolean isNull(Object obj) {
         return obj == null || "".equals(obj.toString().trim());
     }
+
+    /**
+     * Is not null boolean.
+     *
+     * @param obj the obj
+     * @return the boolean
+     */
+    public static boolean isNotNull(Object obj) {
+        assert obj != null;
+        assert "".equals(obj.toString().trim());
+        return true;
+    }
 }
