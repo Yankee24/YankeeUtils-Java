@@ -32,6 +32,7 @@
             <version>5.1.35</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <!-- 如果使用的是 MySQL8，记得将上面的 MySQL5 的依赖注释掉 -->
         <!--<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
