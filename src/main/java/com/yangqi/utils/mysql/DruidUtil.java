@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- * The type My sql 5 conn util.
+ * The type MySQL conn util.
  *
  * @author Yankee
  * @date 2020 /3/13 22:42
