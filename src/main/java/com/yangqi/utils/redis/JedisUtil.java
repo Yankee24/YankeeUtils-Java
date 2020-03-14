@@ -19,7 +19,7 @@ public class JedisUtil {
     private static Properties prop = PropertiesUtil.getProperties("redis.properties");
 
     /**
-     * 创建 Jedis
+     * 创建 Jedis 连接对象
      */
     private static void createJedis() {
         // Jedis 连接配置

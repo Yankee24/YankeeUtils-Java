@@ -68,7 +68,7 @@ public class JedisPoolUtil {
         Set<HostAndPort> nodes = new HashSet<>();
         for (String ipPort : serverArray) {
             String[] ipPortPair = ipPort.split(":");
-            nodes.add(new HostAndPort(ipPortPair[0].trim(), Integer.parseInt(ipPortPair[1].trim())));
+            nodes.add(new HostAndPort(ipPortPair[0].trim(), Integer.parseInt(ipPortPair[1])));
         }
 
         // 注意：这里超时时间不要太短，会有超时重试机制
