@@ -25,12 +25,8 @@ public class PropertiesUtil {
         // 获取 Properties 对象
         prop = getProperties(propName);
         // 获取对应 key 的 value 值
-        String value = prop.getProperty(key);
-        if (value != null) {
-            return value;
-        } else {
-            return null;
-        }
+        return prop.getProperty(key);
+
     }
 
     /**
