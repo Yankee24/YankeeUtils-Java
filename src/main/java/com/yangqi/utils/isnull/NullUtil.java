@@ -30,7 +30,7 @@ public class NullUtil {
      */
     public static boolean isNotNull(Object obj) {
         assert obj != null;
-        assert "".equals(obj.toString().trim());
+        assert !"".equals(obj.toString().trim());
         return true;
     }
 }
